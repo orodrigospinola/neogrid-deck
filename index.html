@@ -273,6 +273,41 @@
   .final-tagline { font-size: clamp(36px, 5vw, 76px); font-weight: 700; color: var(--text); line-height: 1.1; letter-spacing: -0.025em; max-width: 1100px; }
   .final-tagline em { font-style: normal; background: linear-gradient(90deg, var(--cyan) 0%, var(--cyan-bright) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-block; }
 
+
+  /* SLIDE 10 MAP — MAPA DA EMPRESA */
+  .slide-10map { padding: 3vh 5vw 2.5vh; }
+  .map-os-win { flex: 1; background: #040b18; border: 1px solid var(--cyan-dim); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 20px 60px rgba(0,0,0,0.5); min-height: 0; }
+  .map-os-topbar { display: flex; align-items: center; gap: 6px; padding: 9px 22px; background: rgba(2,5,12,0.98); border-bottom: 1px solid rgba(51,173,229,0.15); font-family: var(--mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; flex-shrink: 0; }
+  .map-os-brand { color: var(--text); font-weight: 600; }
+  .map-os-brand span { color: var(--cyan); }
+  .map-os-page { color: var(--cyan); }
+  .map-os-sep { color: var(--text-4); margin: 0 2px; }
+  .map-os-body { flex: 1; padding: 14px 24px 12px; display: flex; flex-direction: column; gap: 6px; min-height: 0; }
+  .map-eyebrow { font-family: var(--mono); font-size: 10px; color: var(--cyan); text-transform: uppercase; letter-spacing: 2.5px; }
+  .map-title { font-size: clamp(20px, 2.2vw, 32px); font-weight: 700; color: var(--text); letter-spacing: -0.02em; line-height: 1; }
+  .map-subtitle { font-family: var(--mono); font-size: 10px; color: var(--text-3); }
+  .map-status { display: inline-flex; align-items: center; gap: 8px; padding: 5px 12px; background: rgba(4,10,20,0.8); border: 1px solid rgba(51,173,229,0.2); border-radius: 6px; font-family: var(--mono); font-size: 10px; color: var(--text-3); width: fit-content; }
+  .map-status-dot { width: 7px; height: 7px; border-radius: 50%; background: #4ade80; box-shadow: 0 0 5px #4ade80; flex-shrink: 0; }
+  .map-status-name { color: var(--cyan); font-weight: 600; }
+  .map-status-sep { color: var(--text-4); }
+  .map-org { flex: 1; display: flex; flex-direction: column; align-items: center; min-height: 0; }
+  .map-ceo-wrap { display: flex; flex-direction: column; align-items: center; margin-bottom: 0; }
+  .map-circle { border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-weight: 700; color: #fff; flex-shrink: 0; }
+  .map-c-ceo { width: 44px; height: 44px; font-size: 13px; background: linear-gradient(135deg,#33ADE5,#1565c0); border: 2px solid var(--cyan); box-shadow: 0 0 12px rgba(51,173,229,0.4); }
+  .map-c-head { width: 32px; height: 32px; font-size: 10px; background: rgba(51,173,229,0.12); border: 1px solid var(--cyan-dim); color: var(--text-2); }
+  .map-c-agent { width: 36px; height: 36px; font-size: 11px; }
+  .map-c-off { background: rgba(255,255,255,0.06) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: rgba(255,255,255,0.2) !important; box-shadow: none !important; }
+  .map-lbl { font-family: var(--mono); font-size: 8px; color: var(--text-3); text-align: center; text-transform: uppercase; letter-spacing: 0.3px; line-height: 1.2; }
+  .map-lbl-off { opacity: 0.3; }
+  .map-conn { width: 1px; height: 10px; background: rgba(51,173,229,0.2); }
+  .map-dept-row { display: grid; grid-template-columns: repeat(9,1fr); gap: 4px; width: 100%; }
+  .map-dept { display: flex; flex-direction: column; align-items: center; gap: 2px; padding-top: 6px; border-top: 1px solid rgba(51,173,229,0.12); }
+  .map-dept-title { font-family: var(--mono); font-size: 8px; color: var(--text-3); text-align: center; text-transform: uppercase; letter-spacing: 0.3px; line-height: 1.2; min-height: 16px; display: flex; align-items: center; justify-content: center; }
+  .map-dept-stats { font-family: var(--mono); font-size: 7.5px; color: var(--text-4); margin: 1px 0; }
+  .map-dots { display: flex; gap: 2px; margin-bottom: 2px; }
+  .map-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--cyan); opacity: 0.5; }
+  .map-agents { display: flex; flex-direction: column; align-items: center; gap: 5px; margin-top: 2px; }
+  .map-agent { display: flex; flex-direction: column; align-items: center; gap: 1px; }
   @media print {
     @page { size: 1920px 1080px; margin: 0; }
     body { background: white !important; }
@@ -302,13 +337,13 @@
   <div class="slide-footer reveal" style="margin-top: 0;">
     <span class="brand">DALTON <strong>LAB</strong></span>
     <span>APRESENTAÇÃO COMERCIAL — COMEX NEOGRID</span>
-    <span><strong>01</strong> / 14</span>
+    <span><strong>01</strong> / 15</span>
   </div>
 </section>
 
 <!-- SLIDE 2 — AI LAST -->
 <section class="slide slide-2" data-slide="2">
-  <div class="slide-header"><div class="slide-tag">CONTEXTO</div><div class="slide-num">02 / <strong>14</strong></div></div>
+  <div class="slide-header"><div class="slide-tag">CONTEXTO</div><div class="slide-num">02 / <strong>15</strong></div></div>
   <div class="stat-block">
     <div class="reveal eyebrow">A REALIDADE QUE NINGUÉM DISCUTE</div>
     <div class="stat-number reveal">95%</div>
@@ -316,12 +351,12 @@
     <div class="stat-source reveal">MIT 2024 · STANFORD 2025</div>
     <div class="stat-conclusion reveal">A causa não é a tecnologia. <strong>É a sequência.</strong></div>
   </div>
-  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>CONTEXTO</span><span><strong>02</strong> / 14</span></div>
+  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>CONTEXTO</span><span><strong>02</strong> / 15</span></div>
 </section>
 
 <!-- SLIDE 3 — METODOLOGIA -->
 <section class="slide slide-3" data-slide="3">
-  <div class="slide-header"><div class="slide-tag">METODOLOGIA</div><div class="slide-num">03 / <strong>14</strong></div></div>
+  <div class="slide-header"><div class="slide-tag">METODOLOGIA</div><div class="slide-num">03 / <strong>15</strong></div></div>
   <div class="reveal"><h2 class="display-lg">A sequência <em class="highlight">que funciona</em>.</h2></div>
   <div class="method reveal">
     <div class="method-step"><div class="method-num">01</div><div class="method-name">Processos</div><div class="method-desc">Trabalho robótico vs. trabalho humano</div></div>
@@ -333,12 +368,12 @@
     <div class="method-tag"></div>
     <div class="method-tag"><strong>NO BACKOFFICE</strong></div>
   </div>
-  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>METODOLOGIA</span><span><strong>03</strong> / 14</span></div>
+  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>METODOLOGIA</span><span><strong>03</strong> / 15</span></div>
 </section>
 
 <!-- SLIDE 4 — TRIO -->
 <section class="slide slide-4" data-slide="4">
-  <div class="slide-header"><div class="slide-tag">QUEM SOMOS</div><div class="slide-num">04 / <strong>14</strong></div></div>
+  <div class="slide-header"><div class="slide-tag">QUEM SOMOS</div><div class="slide-num">04 / <strong>15</strong></div></div>
   <div class="reveal"><h2 class="display-lg">Founders <em class="highlight">na linha de frente do negócio</em>.</h2></div>
   <div class="trio reveal">
     <div class="person-card">
@@ -360,12 +395,12 @@
       <p class="person-tag">Conselheiro Rede Brasil. 30 anos em estratégia comercial de varejo.</p>
     </div>
   </div>
-  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>QUEM SOMOS</span><span><strong>04</strong> / 14</span></div>
+  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>QUEM SOMOS</span><span><strong>04</strong> / 15</span></div>
 </section>
 
 <!-- SLIDE 5 — TRAÇÃO -->
 <section class="slide slide-5" data-slide="5">
-  <div class="slide-header"><div class="slide-tag">TRAÇÃO</div><div class="slide-num">05 / <strong>14</strong></div></div>
+  <div class="slide-header"><div class="slide-tag">TRAÇÃO</div><div class="slide-num">05 / <strong>15</strong></div></div>
   <div class="reveal"><h2 class="display-lg">Operação <em class="highlight">rodando hoje</em>.</h2></div>
   <div class="stats-row reveal">
     <div class="stat-card"><div class="stat-card-num">21</div><div class="stat-card-label">Clientes ativos</div></div>
@@ -398,12 +433,12 @@
     </div>
   </div>
 
-  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>TRAÇÃO</span><span><strong>05</strong> / 14</span></div>
+  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>TRAÇÃO</span><span><strong>05</strong> / 15</span></div>
 </section>
 
 <!-- SLIDE 6 — JEISYS -->
 <section class="slide slide-6" data-slide="6">
-  <div class="slide-header"><div class="slide-tag">CASE EM DESTAQUE · 01</div><div class="slide-num">06 / <strong>14</strong></div></div>
+  <div class="slide-header"><div class="slide-tag">CASE EM DESTAQUE · 01</div><div class="slide-num">06 / <strong>15</strong></div></div>
   <div class="case-hero reveal">
     <div class="case-hero-info">
       <div class="case-vertical-tag">MEDTECH · GRUPO SUL-COREANO · ~US$ 150M/ANO</div>
@@ -426,12 +461,12 @@
       </div>
     </div>
   </div>
-  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>JEISYS MEDICAL</span><span><strong>06</strong> / 14</span></div>
+  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>JEISYS MEDICAL</span><span><strong>06</strong> / 15</span></div>
 </section>
 
 <!-- SLIDE 7 — COBRANÇA -->
 <section class="slide slide-7" data-slide="7">
-  <div class="slide-header"><div class="slide-tag">CASE EM DESTAQUE · 02</div><div class="slide-num">07 / <strong>14</strong></div></div>
+  <div class="slide-header"><div class="slide-tag">CASE EM DESTAQUE · 02</div><div class="slide-num">07 / <strong>15</strong></div></div>
   <div class="case-numbers reveal">
     <div class="case-numbers-info">
       <div class="case-vertical-tag">SAÚDE · PLANO DE SAÚDE</div>
@@ -452,12 +487,12 @@
       </div>
     </div>
   </div>
-  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>COBRANÇA AGÊNTICA</span><span><strong>07</strong> / 14</span></div>
+  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>COBRANÇA AGÊNTICA</span><span><strong>07</strong> / 15</span></div>
 </section>
 
 <!-- SLIDE 8 — GALERIA -->
 <section class="slide slide-8" data-slide="8">
-  <div class="slide-header"><div class="slide-tag">PORTFÓLIO — VISÃO RÁPIDA</div><div class="slide-num">08 / <strong>14</strong></div></div>
+  <div class="slide-header"><div class="slide-tag">PORTFÓLIO — VISÃO RÁPIDA</div><div class="slide-num">08 / <strong>15</strong></div></div>
   <div class="reveal"><h2 class="display-lg"><em class="highlight">Outros</em> cases ativos.</h2></div>
   <div class="gallery reveal">
     <div class="gallery-card">
@@ -497,12 +532,12 @@
       <div class="gallery-desc">Agente preenche o CRM a partir das reuniões e movimenta os cards conforme o pipeline avança.</div>
     </div>
   </div>
-  <div class="slide-footer" style="margin-top: 3vh;"><span class="brand">DALTON <strong>LAB</strong></span><span>PORTFÓLIO</span><span><strong>08</strong> / 14</span></div>
+  <div class="slide-footer" style="margin-top: 3vh;"><span class="brand">DALTON <strong>LAB</strong></span><span>PORTFÓLIO</span><span><strong>08</strong> / 15</span></div>
 </section>
 
 <!-- SLIDE 9 — NEO -->
 <section class="slide slide-9" data-slide="9">
-  <div class="slide-header"><div class="slide-tag">CASE INTERNO — NEO</div><div class="slide-num">09 / <strong>14</strong></div></div>
+  <div class="slide-header"><div class="slide-tag">CASE INTERNO — NEO</div><div class="slide-num">09 / <strong>15</strong></div></div>
   <div class="neo-grid reveal">
     <div class="neo-info">
       <div class="eyebrow">CHIEF OF STAFF DIGITAL</div>
@@ -540,12 +575,142 @@
       </div>
     </div>
   </div>
-  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>NEO · CASE INTERNO</span><span><strong>09</strong> / 14</span></div>
+  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>NEO · CASE INTERNO</span><span><strong>09</strong> / 15</span></div>
 </section>
 
-<!-- SLIDE 10 — DALTON OS -->
-<section class="slide slide-10" data-slide="10">
-  <div class="slide-header"><div class="slide-tag">GOVERNANÇA — DALTON LAB OS</div><div class="slide-num">10 / <strong>14</strong></div></div>
+<!-- SLIDE 10 — DALTON LAB OS — MAPA DA EMPRESA -->
+<section class="slide slide-10map" data-slide="10">
+  <div class="slide-header reveal"><div class="slide-tag">GOVERNANÇA — DALTON LAB OS</div><div class="slide-num">10 / <strong>15</strong></div></div>
+  <div class="map-os-win reveal">
+    <div class="map-os-topbar">
+      <span class="map-os-brand"><span>DALTON</span> LAB OS</span>
+      <span class="map-os-sep">·</span>
+      <span class="map-os-page">MAPA DA EMPRESA</span>
+    </div>
+    <div class="map-os-body">
+      <div>
+        <div class="map-eyebrow">DALTON LAB OS</div>
+        <div class="map-title">Mapa da Empresa</div>
+        <div class="map-subtitle">23 agentes em 9 áreas · 10 ativos agora</div>
+      </div>
+      <div class="map-status">
+        <span class="map-status-dot"></span>
+        <span class="map-status-name">Neo</span>
+        <span class="map-status-sep">·</span>
+        <span>Briefing diário enviado</span>
+      </div>
+      <div class="map-org">
+        <div class="map-ceo-wrap">
+          <div class="map-circle map-c-ceo">RS</div>
+          <div class="map-lbl">CEO</div>
+        </div>
+        <div class="map-conn"></div>
+        <div class="map-dept-row">
+          <div class="map-dept">
+            <div class="map-dept-title">CEO Office</div>
+            <div class="map-circle map-c-head">RS</div>
+            <div class="map-dept-stats">1H · 2A</div>
+            <div class="map-dots"><span class="map-dot"></span><span class="map-dot"></span><span class="map-dot"></span><span class="map-dot"></span></div>
+            <div class="map-agents">
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#33ADE5,#1565c0)">N</div><div class="map-lbl">Neo</div></div>
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#9c27b0,#4a148c)">A</div><div class="map-lbl">Agenda</div></div>
+            </div>
+          </div>
+          <div class="map-dept">
+            <div class="map-dept-title">Vendas</div>
+            <div class="map-circle map-c-head">AC</div>
+            <div class="map-dept-stats">1H · 3A</div>
+            <div class="map-dots"><span class="map-dot"></span><span class="map-dot"></span><span class="map-dot"></span><span class="map-dot"></span></div>
+            <div class="map-agents">
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#00c853,#00695c)">S</div><div class="map-lbl">SDR Agent</div></div>
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#00bcd4,#006064)">C</div><div class="map-lbl">CRM Agent</div></div>
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#3f51b5,#1a237e)">P</div><div class="map-lbl">Proposal</div></div>
+            </div>
+          </div>
+          <div class="map-dept">
+            <div class="map-dept-title">Marketing</div>
+            <div class="map-circle map-c-head">LP</div>
+            <div class="map-dept-stats">1H · 3A</div>
+            <div class="map-dots"><span class="map-dot"></span><span class="map-dot"></span><span class="map-dot"></span></div>
+            <div class="map-agents">
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#00bcd4,#006064)">C</div><div class="map-lbl">Content</div></div>
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#1976d2,#0d47a1)">B</div><div class="map-lbl">Benchmark</div></div>
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#e91e63,#880e4f)">S</div><div class="map-lbl">Social</div></div>
+            </div>
+          </div>
+          <div class="map-dept">
+            <div class="map-dept-title">People</div>
+            <div class="map-circle map-c-head">JR</div>
+            <div class="map-dept-stats">1H · 4A</div>
+            <div class="map-dots"><span class="map-dot"></span><span class="map-dot"></span></div>
+            <div class="map-agents">
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#f06292,#880e4f)">R</div><div class="map-lbl">Recruiter</div></div>
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#ff9800,#e65100)">O</div><div class="map-lbl">Onboarding</div></div>
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#00bcd4,#006064)">C</div><div class="map-lbl">Culture Pulse</div></div>
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#e91e63,#880e4f)">1</div><div class="map-lbl">1:1 Prep</div></div>
+            </div>
+          </div>
+          <div class="map-dept">
+            <div class="map-dept-title">Customer Success</div>
+            <div class="map-circle map-c-head">RT</div>
+            <div class="map-dept-stats">1H · 3A</div>
+            <div class="map-dots"><span class="map-dot"></span><span class="map-dot"></span><span class="map-dot"></span></div>
+            <div class="map-agents">
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#00bcd4,#006064)">H</div><div class="map-lbl">Health Score</div></div>
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#26c6da,#00838f)">C</div><div class="map-lbl">CS Onboarding</div></div>
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#4dd0e1,#0097a7)">N</div><div class="map-lbl">NPS</div></div>
+            </div>
+          </div>
+          <div class="map-dept">
+            <div class="map-dept-title">Operações</div>
+            <div class="map-circle map-c-head">MS</div>
+            <div class="map-dept-stats">1H · 2A</div>
+            <div class="map-dots"><span class="map-dot"></span><span class="map-dot"></span></div>
+            <div class="map-agents">
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#26c6da,#00838f)">T</div><div class="map-lbl">Transcriber</div></div>
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#66bb6a,#1b5e20)">T</div><div class="map-lbl">Tracker</div></div>
+            </div>
+          </div>
+          <div class="map-dept">
+            <div class="map-dept-title">Financeiro</div>
+            <div class="map-circle map-c-head">PL</div>
+            <div class="map-dept-stats">1H · 2A</div>
+            <div class="map-dots"><span class="map-dot"></span><span class="map-dot"></span></div>
+            <div class="map-agents">
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#ffd54f,#f57f17)">F</div><div class="map-lbl">Finance</div></div>
+              <div class="map-agent"><div class="map-circle map-c-agent map-c-off">I</div><div class="map-lbl map-lbl-off">Invoice</div></div>
+            </div>
+          </div>
+          <div class="map-dept">
+            <div class="map-dept-title">Legal</div>
+            <div class="map-circle map-c-head">BA</div>
+            <div class="map-dept-stats">5H · 3A</div>
+            <div class="map-dots"><span class="map-dot"></span></div>
+            <div class="map-agents">
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#ef5350,#b71c1c)">C</div><div class="map-lbl">Contract</div></div>
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#e53935,#b71c1c)">C</div><div class="map-lbl">Compliance</div></div>
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#c62828,#7f0000)">D</div><div class="map-lbl">DPO</div></div>
+            </div>
+          </div>
+          <div class="map-dept">
+            <div class="map-dept-title">Tech</div>
+            <div class="map-circle map-c-head">DM</div>
+            <div class="map-dept-stats">1H · 1A</div>
+            <div class="map-dots"><span class="map-dot"></span><span class="map-dot"></span></div>
+            <div class="map-agents">
+              <div class="map-agent"><div class="map-circle map-c-agent" style="background:linear-gradient(135deg,#ffa726,#e65100)">Q</div><div class="map-lbl">QA</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>DALTON LAB OS — MAPA DA EMPRESA</span><span><strong>10</strong> / 15</span></div>
+</section>
+
+<!-- SLIDE 11 — DALTON OS -->
+<section class="slide slide-10" data-slide="11">
+  <div class="slide-header"><div class="slide-tag">GOVERNANÇA — DALTON LAB OS</div><div class="slide-num">11 / <strong>15</strong></div></div>
   <div class="reveal" style="margin-bottom: 2vh;"><h2 class="display-lg"><em class="highlight">Dalton Lab OS</em>.</h2></div>
   <div class="os-grid reveal">
 
@@ -575,12 +740,12 @@
     </div>
 
   </div>
-  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>DALTON LAB OS</span><span><strong>10</strong> / 14</span></div>
+  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>DALTON LAB OS</span><span><strong>11</strong> / 15</span></div>
 </section>
 
 <!-- SLIDE 11 — AI PARTNER REDESENHADO -->
-<section class="slide slide-11" data-slide="11">
-  <div class="slide-header"><div class="slide-tag">MODELO AI PARTNER</div><div class="slide-num">11 / <strong>14</strong></div></div>
+<section class="slide slide-11" data-slide="12">
+  <div class="slide-header"><div class="slide-tag">MODELO AI PARTNER</div><div class="slide-num">12 / <strong>15</strong></div></div>
   <div class="partner-hero reveal">
     <div class="partner-side bad">
       <div class="partner-side-headline">Fornecedor</div>
@@ -598,12 +763,12 @@
     <div class="partner-action"><div class="partner-action-num">[ 03 ]</div><div class="partner-action-title">Cultura primeiro</div><div class="partner-action-desc">Aceleramos a mudança que sustenta a tecnologia.</div></div>
     <div class="partner-action"><div class="partner-action-num">[ 04 ]</div><div class="partner-action-title">Resultado, não esforço</div><div class="partner-action-desc">Modelo comercial alinhado a ROI.</div></div>
   </div>
-  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>AI PARTNER</span><span><strong>11</strong> / 14</span></div>
+  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>AI PARTNER</span><span><strong>12</strong> / 15</span></div>
 </section>
 
 <!-- SLIDE 12 — MODELO COMERCIAL -->
-<section class="slide slide-12" data-slide="12">
-  <div class="slide-header"><div class="slide-tag">MODELO COMERCIAL</div><div class="slide-num">12 / <strong>14</strong></div></div>
+<section class="slide slide-12" data-slide="13">
+  <div class="slide-header"><div class="slide-tag">MODELO COMERCIAL</div><div class="slide-num">13 / <strong>15</strong></div></div>
   <div class="reveal"><h2 class="display-lg">Modelo <em class="highlight">win-win</em>.</h2></div>
   <div class="fees reveal">
     <div class="fee-card">
@@ -631,12 +796,12 @@
       <div class="fee-footer"><strong>Alinhamento total</strong></div>
     </div>
   </div>
-  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>MODELO COMERCIAL</span><span><strong>12</strong> / 14</span></div>
+  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>MODELO COMERCIAL</span><span><strong>13</strong> / 15</span></div>
 </section>
 
 <!-- SLIDE 13 — PRÓXIMOS PASSOS -->
-<section class="slide slide-13" data-slide="13">
-  <div class="slide-header"><div class="slide-tag">PRÓXIMOS PASSOS</div><div class="slide-num">13 / <strong>14</strong></div></div>
+<section class="slide slide-13" data-slide="14">
+  <div class="slide-header"><div class="slide-tag">PRÓXIMOS PASSOS</div><div class="slide-num">14 / <strong>15</strong></div></div>
   <div class="ending-content">
     <div class="reveal"><h2>Vamos <em>começar</em>.</h2></div>
     <div class="timeline-simple reveal">
@@ -657,12 +822,12 @@
       </div>
     </div>
   </div>
-  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>PRÓXIMOS PASSOS</span><span><strong>13</strong> / 14</span></div>
+  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>PRÓXIMOS PASSOS</span><span><strong>14</strong> / 15</span></div>
 </section>
 
 <!-- SLIDE 14 — FINAL -->
-<section class="slide slide-14" data-slide="14">
-  <div class="slide-header"><div class="slide-tag">DALTON LAB</div><div class="slide-num">14 / <strong>14</strong></div></div>
+<section class="slide slide-14" data-slide="15">
+  <div class="slide-header"><div class="slide-tag">DALTON LAB</div><div class="slide-num">15 / <strong>15</strong></div></div>
 
   <div class="final-content">
     <div class="final-logo reveal">
@@ -683,14 +848,14 @@
     <h2 class="final-tagline reveal">Prepare-se para se tornar uma<br><em>Organização Agêntica</em>.</h2>
   </div>
 
-  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>DALTONLAB.AI</span><span><strong>14</strong> / 14</span></div>
+  <div class="slide-footer"><span class="brand">DALTON <strong>LAB</strong></span><span>DALTONLAB.AI</span><span><strong>15</strong> / 15</span></div>
 </section>
 
 </div>
 
 <div class="nav">
   <button class="nav-btn" id="prev-btn" aria-label="Anterior">←</button>
-  <div class="nav-counter"><strong id="current">01</strong> / 14</div>
+  <div class="nav-counter"><strong id="current">01</strong> / 15</div>
   <button class="nav-btn" id="next-btn" aria-label="Próximo">→</button>
 </div>
 
